@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Concours</title>
+  <link rel="stylesheet" href="../CSS/styleconcours.css">
+  <script src="../js/script.js"></script>
+  
+</head>
+<body>
+
+	<form method="post">
+	
+		<input type="button" class="bt" value="Notre Liste de Noel" onclick="location.href='../html/listenoel.html';"/>
+		<input type="button" class="bt" value="Temps restant avant le prochain Noel" onclick="location.href='../html/tempsrestant.html';"/>
+		<input type="button" class="bt" value="Concours" onclick="location.href='../html/concours.html';"/>
+		
+	</form>
+
+
+	<h1 style="font-size:50px;text-align:center;">Participer au concours</h1>
+	
+	<p style="font-size:30px;"> Tenter de remporter un des objets de notre liste de Noel ! </p>
+
+	<p style="font-size:30px;"> Pour jouer, c'est très simple remplissez le formulaire ci-dessous et choisissez l'objet que vous désirez recevoir puis envoyez nous le formulaire*</p>
+
+	<form method="post" id="formulaire_concours" action="">
+		<fieldset style="background-color:#DDDDDD;text-align:center;width:40%;margin:auto;">
+			<label>Adresse e-mail :</label>
+			<input type="text" class="textelarge" value="" placeholder="Adresse e-mail"/>
+			<br />
+			<br />
+			<label>Pr&eacute;nom :</label>
+			<input type="text" class="textecourt" value="" placeholder="Prénom"/>
+			<label>Nom :</label>
+			<input type="text" class="textecourt" value="" placeholder="Nom"/>
+			<br />
+			<br />
+			<input type="radio" class="btn" name="genre" value="Mme" checked/>Mme.
+			<input type="radio" class="btn" name="genre" value="Mlle"/>Mlle.
+			<input type="radio" class="btn" name="genre" value="M"/>M.
+			<br />
+			<br />
+			<label>Entrer votre date de naissance :</label>
+			<br />
+			<input type="date" class="anniversaire"value="" placeholder="Date de Naissance"/>
+			<br />
+			<br />
+			<label>Ville :</label>
+			<input type="text" class="textelarge" value="" placeholder="Ville"/>
+			<br />
+			<label>Code Postal :</label>
+			<input type="text" class="textecourt" value="" placeholder="Code Postale" maxlength="5"/>
+			<label>Adresse :</label>
+			<input type="text" class="textelarge" value="" placeholder="Adresse Postale"/>
+			<br />
+			<br />
+			
+			<label for="nom">Choisisser le cadeau de votre choix :</label>
+			<br />
+			<select name="nom" size="1">
+				<optgroup label ="CDs">
+					<option>Adieu Bientot - Columbine
+					<option>A Night at the Opera - Queen
+					<option>Orginiul - Cadillac
+					<option>Stup Virus - Stupeflip
+					<option>Merrie Land - The Good, The Bad & The Queen
+				</optgroup>
+				<optgroup label ="Vetements">
+					<option>Pull col rond merinos bleu
+					<option>Sweat Obey
+				</optgroup>
+				<optgroup label ="High-Tech">
+					<option>Google Home
+					<option>Ampoule Philipps HUE
+					<option>Enceinte Marshall
+				</optgroup>
+			</select>
+			
+			<br />
+			<br />
+			<input type="button" value="S'inscrire" onclick="formulaire_valide();">
+			<input type="reset">
+		</fieldset>
+		
+	</form>
+	
+	<br />
+	
+	<a href="../html/main.html" style="position:absolute;bottom:30px;">Retour au plan du site</a>
+	
+	<p style="font-size:10px;position:absolute;bottom:0px;"> *Tirage au sort le 30/02/2019, frais de participation 5€ non remboursable, un objet de chaque en stock</p>
+
+
+</body>
+</html>

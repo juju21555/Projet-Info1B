@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Paiement</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <script src="../js/script.js"></script>
+  
+</head>
+<body>
+
+	
+
+	<form method="post" id="formulaire" action="">
+	
+		<div id="div1">
+			<h1> Frais de participation 5€</h1>
+			<input type="radio" class="chxPaiement" name="chxPaiement" value="CB" onclick="choixPaiement();"/>
+			<label for="CB">Payer par Carte Bancaire</label>
+				<div id="CBdiv" hidden>
+					
+					<fieldset>
+						<legend>CB</legend>
+						<label>Nom :</label>
+						<input type="text" class="texte" value="" class="in"/>
+						<br />
+						<br />
+						<label>Numero de CB :</label>
+						<input type="text" class="texte" value="" class="in"/>
+						<br />
+						<br />
+						<label>Date d'expiration :</label>
+						<select>
+							<option>Mois
+							<option>1
+							<option>2
+							<option>3
+							<option>4
+							<option>5
+							<option>6
+							<option>7
+							<option>8
+							<option>9
+							<option>10
+							<option>11
+							<option>12
+						</select>
+						<select>
+							<option>Année
+							<option>2018
+							<option>2019
+							<option>2020
+							<option>2021
+							<option>2022
+							<option>2023
+							<option>2024
+						</select>
+						<br />
+						<br />
+						<label>Code Secret :</label>
+						<input type="text" class="texte" value="" class="in"/>
+						<br />
+						<br />
+						<input type="submit" value="Payer" onclick="verifPaiement();">
+						<input type="reset">
+						<br />
+						<br />
+					</fieldset>
+				</div>
+			
+			<br />
+			<input type="radio" class="chxPaiement" name="chxPaiement" value="Paypal" onclick="choixPaiement();"/>
+			<label for="Paypal">Payer par Paypal</label>
+				<div id="Paypaldiv" hidden>
+					<fieldset>
+					<legend>Paypal</legend>
+						<h6>Connectez-vous à votre compte Paypal</h6>
+						<label>Addresse mail :</label>
+						<input type="text" class="texte" value=""/>
+						<br />
+						<br />
+						<label>Mot de Passe :</label>
+						<input type="password" class="texte" value=""/>
+						<br />
+						<input type="submit" value="Se Connecter" onclick="verifPaiement();">
+					</fieldset>
+				</div>
+				
+			<br />
+			<input type="radio" class="chxPaiement" name="chxPaiement" value="Mobile" onclick="choixPaiement();"/>
+			<label for="Mobile">Payer par Mobile</label>
+				<div id="Mobilediv" hidden>
+					<fieldset>
+					<legend>Mobile</legend>
+						<label>N° de t&eacute;l&eacute;phone :</label>
+						<input type="text" class="texte" value=""/>
+						<br />
+						<input type="submit" value="Envoyer" onclick="verifPaiement();">
+					</fieldset>
+				</div>
+				
+			<br />	
+			<input type="button" value="Retour" onclick="location.href='../html/main.html';">
+		
+		</div>
+		
+		
+	</form>
+	
+	
+
+</body>
+</html>
