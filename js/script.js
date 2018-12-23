@@ -20,7 +20,7 @@ function calcTemps(){
 	paragraphe.innerHTML += heure_restante+" heure(s) ";
 	paragraphe.innerHTML += minute_restante+" minute(s) ";
 	paragraphe.innerHTML += sec_temp+" seconde(s) ";
-	paragraphe.innerHTML += "avant le prochain Noel ";
+	paragraphe.innerHTML += "avant le prochain No&euml;l ";
 	
 }
 
@@ -142,9 +142,14 @@ function verifPaiement() {
 function tempo(){
 	setTimeout(function(){window.close();},2000);
 }
+
+function tmusique(){
+	setTimeout(function(){musique();},100);
+}
+
 function musique() {
-	var music = document.getElementById("music");
-	music.play();
+	var music = document.getElementById("music").play();
+
 }
 
 
