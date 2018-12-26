@@ -4,6 +4,8 @@ function calcTemps(){
 	var milis_actuelle = new Date().getTime();
 	
 	var annee = new Date().getFullYear();
+	if (new Date().getDate() > 25)
+		annee += 1;
 	var milis_future_noel = new Date('December 25 '+annee).getTime();
 	
 	
