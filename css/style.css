@@ -5,29 +5,41 @@ body{
 }
 
 a img {
-  position: absolute;
-  opacity: 0;
-  width: 250px;
-  height: 250px;
-  left: 500px;
-  top: -150px;
-  transition: opacity .5s, top .5s;
-  visibility: hidden;
-}
-
-.in{
-	display: block;
-	float: right;
-}
-.titre{
-	display: block;
-	text-align:center;
+	position: absolute;
+	opacity: 0;
+	width: 500px;
+	height: 500px;
+	left: 900px;
+	top: -150px;
+	transition: opacity .5s, top .5s;
+	visibility: hidden;
 }
 
 a:hover img {
-  opacity: 1;
-  top: 100px;
-  visibility: visible;
+	opacity: 1;
+	top: 100px;
+	visibility: visible;
+}
+
+table {
+	border: medium solid #aaaaaa;
+	border-collapse: collapse;
+	width: 50%;
+  table-layout: fixed;
+}
+
+th {
+    border: 1px solid black;
+	width: 50%;
+	text-align: center;
+	background-color: #cccccc;
+}
+
+td {
+    border: 1px solid black;
+	width: 50%;
+	text-align: center;
+	background-color: #ffffff;
 }
 
 p, h1, ol{
@@ -47,6 +59,17 @@ p, h1, ol{
 	padding:5% 5%;
 	background-color:#DDDDDD;
 }
+
+
+.in{
+	display: block;
+	float: right;
+}
+.titre{
+	display: block;
+	text-align:center;
+}
+
 
 .bt{
 	width : 28%;

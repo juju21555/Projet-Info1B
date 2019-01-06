@@ -60,8 +60,11 @@ function formulaire_valide(){
 	var test = true;
 	
 	for (var i=0;i<elems.length;i++){
-		if (elems.elements[i].value == "" && (i==0 || i==1 | i==2 || i==6 | i==7 || i==8 || i==9))
+		if (elems.elements[i].value == "" && (i==0 || i==1 | i==2 || i==9 | i==10 || i==11))
 			test = false;
+		if (elems.elements[i].selectedIndex == "0" && (i==6 || i==7 || i==8))
+			test = false;
+		
 	}
 	
 	if (test)
@@ -151,7 +154,26 @@ function tmusique(){
 
 function musique() {
 	var music = document.getElementById("music").play();
-
 }
+
+function switchAffichage(){
+	var tableref = document.getElementById("affichagetableau");
+	var listeref = document.getElementById("affichageliste");
+	var titreref = document.getElementById("titre");
+
+	if (tableref.hidden){
+		tableref.hidden = false;
+		listeref.hidden = true;
+		titreref.innerHTML = "Notre tableau de No&euml;l";
+	}
+	else if (listeref.hidden == true){
+		listeref.hidden = false;
+		tableref.hidden = true;
+		titreref.innerHTML = "Notre liste de No&euml;l";
+	}
+}
+
+
+
 
 

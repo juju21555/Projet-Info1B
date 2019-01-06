@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
+  <meta name="auteurs" content="Jules Morandi et Justin Bizouard" />
   <title>Paiement</title>
   <link rel="stylesheet" href="../CSS/style.css">
   <script src="../js/script.js"></script>
@@ -11,22 +12,21 @@
 
 	
 
-	<form method="post" id="formulaire" action="">
+	<form method="post" id="formulaire">
 	
 		<div id="div1">
 			<h1> Frais de participation 5€</h1>
 			<input type="radio" class="chxPaiement" name="chxPaiement" value="CB" onclick="choixPaiement();"/>
-			<label for="CB">Payer par Carte Bancaire</label>
+			<label>Payer par Carte Bancaire</label>
 				<div id="CBdiv" hidden>
-					
 					<fieldset>
 						<legend>CB</legend>
 						<label>Nom :</label>
-						<input type="text" class="texte" value="" class="in"/>
+						<input type="text" value="" class="texte"/>
 						<br />
 						<br />
 						<label>Numero de CB :</label>
-						<input type="text" class="texte" value="" class="in"/>
+						<input type="text" value="" class="texte"/>
 						<br />
 						<br />
 						<label>Date d'expiration :</label>
@@ -58,7 +58,7 @@
 						<br />
 						<br />
 						<label>Code Secret :</label>
-						<input type="text" class="texte" value="" class="in"/>
+						<input type="text" value="" class="texte"/>
 						<br />
 						<br />
 						<input type="submit" value="Payer" onclick="verifPaiement();">
@@ -70,7 +70,7 @@
 			
 			<br />
 			<input type="radio" class="chxPaiement" name="chxPaiement" value="Paypal" onclick="choixPaiement();"/>
-			<label for="Paypal">Payer par Paypal</label>
+			<label>Payer par Paypal</label>
 				<div id="Paypaldiv" hidden>
 					<fieldset>
 					<legend>Paypal</legend>
@@ -88,7 +88,7 @@
 				
 			<br />
 			<input type="radio" class="chxPaiement" name="chxPaiement" value="Mobile" onclick="choixPaiement();"/>
-			<label for="Mobile">Payer par Mobile</label>
+			<label>Payer par Mobile</label>
 				<div id="Mobilediv" hidden>
 					<fieldset>
 					<legend>Mobile</legend>

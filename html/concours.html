@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
+  <meta name="auteurs" content="Jules Morandi et Justin Bizouard" />
   <title>Concours</title>
   <link rel="stylesheet" href="../CSS/styleconcours.css">
   <script src="../js/script.js"></script>
@@ -24,10 +25,10 @@
 
 	<p style="font-size:30px;"> Pour jouer, c'est très simple remplissez le formulaire ci-dessous et choisissez l'objet que vous désirez recevoir puis envoyez nous le formulaire*</p>
 
-	<form method="post" id="formulaire_concours" action="">
+	<form method="post" id="formulaire_concours">
 		<fieldset style="background-color:#DDDDDD;text-align:center;width:40%;margin:auto;">
 			<label>Adresse e-mail :</label>
-			<input type="text" class="textelarge" value="" placeholder="Adresse e-mail"/>
+			<input type="email" class="textelarge" value="" placeholder="Adresse e-mail"/>
 			<br />
 			<br />
 			<label>Pr&eacute;nom :</label>
@@ -43,7 +44,130 @@
 			<br />
 			<label>Entrer votre date de naissance :</label>
 			<br />
-			<input type="date" class="anniversaire"value="" placeholder="Date de Naissance"/>
+				<select>
+					<option>Jour
+					<option>1
+					<option>2
+					<option>3
+					<option>4
+					<option>5
+					<option>6
+					<option>7
+					<option>8
+					<option>9
+					<option>10
+					<option>11
+					<option>12
+					<option>13
+					<option>14
+					<option>15
+					<option>16
+					<option>17
+					<option>18
+					<option>19
+					<option>20
+					<option>21
+					<option>22
+					<option>23
+					<option>24
+					<option>25
+					<option>26
+					<option>27
+					<option>28
+					<option>29
+					<option>30
+					<option>31
+				</select>
+				<select>
+					<option>Mois
+					<option>1
+					<option>2
+					<option>3
+					<option>4
+					<option>5
+					<option>6
+					<option>7
+					<option>8
+					<option>9
+					<option>10
+					<option>11
+					<option>12
+				</select>
+				<select>
+					<option>Année
+					<option>1930
+					<option>1931
+					<option>1932
+					<option>1933
+					<option>1934
+					<option>1935
+					<option>1936
+					<option>1937
+					<option>1938
+					<option>1939
+					<option>1940
+					<option>1941
+					<option>1942
+					<option>1943
+					<option>1944
+					<option>1945
+					<option>1946
+					<option>1947
+					<option>1948
+					<option>1949
+					<option>1950
+					<option>1951
+					<option>1952
+					<option>1953
+					<option>1954
+					<option>1955
+					<option>1956
+					<option>1957
+					<option>1958
+					<option>1959
+					<option>1960
+					<option>1961
+					<option>1962
+					<option>1963
+					<option>1964
+					<option>1965
+					<option>1966
+					<option>1967
+					<option>1968
+					<option>1969
+					<option>1970
+					<option>1971
+					<option>1972
+					<option>1973
+					<option>1974
+					<option>1975
+					<option>1976
+					<option>1977
+					<option>1978
+					<option>1979
+					<option>1980
+					<option>1981
+					<option>1982
+					<option>1983
+					<option>1984
+					<option>1985
+					<option>1986
+					<option>1987
+					<option>1988
+					<option>1989
+					<option>1990
+					<option>1991
+					<option>1992
+					<option>1993
+					<option>1994
+					<option>1995
+					<option>1996
+					<option>1997
+					<option>1998
+					<option>1999
+					<option>2000
+					<option>2001
+				</select>
 			<br />
 			<br />
 			<label>Ville :</label>
@@ -56,9 +180,9 @@
 			<br />
 			<br />
 			
-			<label for="nom">Choisisser le cadeau de votre choix :</label>
+			<label>Choisisser le cadeau de votre choix :</label>
 			<br />
-			<select name="nom" size="1">
+			<select size="1">
 				<optgroup label ="CDs">
 					<option>Adieu Bientot - Columbine
 					<option>A Night at the Opera - Queen
